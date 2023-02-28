@@ -1,4 +1,4 @@
-import get from '.'
+import get from '../src/zpub-to-address.js'
 
 const zpub = 'zpub6tLiDTn3oLe8h1o8JZChRzj1LYweqc1H73LVtzX2748aXwptiP4vvefRYHFUWn8hcbQXMr3sEYwXLQJqBHyGsGRCZGYRKbMqhSLfpf5xY6U'
 

@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "src/index.js",
+  "main": "src/zpub-to-address.js",
   "scripts": {
-    "start": "nodemon src/index.js",
-    "test": "nodemon src/test.js"
+    "zpub-to-address": "node src/zpub-to-address.js",
+    "test-zpub-to-address": "node test/zpub-to-address.js",
+    "create-seed": "node src/create-seed.js"
   },
   "keywords": [],
   "author": "mrtn28",
