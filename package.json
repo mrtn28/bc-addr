@@ -2,10 +2,11 @@
   "name": "zpub-bc1",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.ts",
+  "type": "module",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon src/index.ts",
-    "test": "nodemon src/test.ts"
+    "start": "nodemon src/index.js",
+    "test": "nodemon src/test.js"
   },
   "keywords": [],
   "author": "mrtn28",

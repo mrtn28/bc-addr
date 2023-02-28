@@ -1,4 +1,4 @@
-import BIP32Factory from 'bip32'
+import { BIP32Factory } from 'bip32'
 import * as bitcoin from 'bitcoinjs-lib'
 import b58 from 'bs58check'
 import * as ecc from 'tiny-secp256k1'
