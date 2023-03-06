@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { cancel, intro, isCancel, outro, select } from '@clack/prompts'
 import bip39 from 'bip39'
 
