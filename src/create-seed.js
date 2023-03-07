@@ -3,10 +3,10 @@
 import { cancel, intro, isCancel, outro, select } from '@clack/prompts'
 import bip39 from 'bip39'
 
-intro('Welcome.')
+intro('Generate mnemonic')
 
 const strength = await select({
-  message: 'Pick a number of words.',
+  message: 'Pick a number of words',
   options: [
     { value: '128', label: '12' },
     { value: '256', label: '24' }
@@ -14,7 +14,7 @@ const strength = await select({
 })
 
 if (isCancel(strength)) {
-  cancel('Operation cancelled.')
+  cancel('Operation cancelled')
   process.exit(0)
 }
 
