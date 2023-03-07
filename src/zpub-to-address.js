@@ -14,7 +14,7 @@ const convertZ = z => {
   return b58.encode(b)
 }
 
-const get = (zpub, limit = 1) => {
+const zpubToAddress = (zpub, limit = 1) => {
   const xpub = convertZ(zpub)
   const node = bip32.fromBase58(xpub, network)
   const addresses = []
@@ -27,4 +27,4 @@ const get = (zpub, limit = 1) => {
   return r
 }
 
-export default get
+export { zpubToAddress }
