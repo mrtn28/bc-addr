@@ -13,8 +13,17 @@
     "create-mnemonic": "node src/create-mnemonic.js"
   },
   "keywords": ["address", "bip39", "bitcoin", "mnemonic", "zpub"],
-  "author": "mrtn28",
+  "author": {
+    "name" : "mrtn28",
+    "url" : "https://github.com/mrtn28"
+  },
   "license": "ISC",
+  "homepage": "https://github.com/mrtn28/bc-addr#readme",
+  "bugs": "https://github.com/mrtn28/bc-addr/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrtn28/bc-addr.git"
+  },
   "dependencies": {
     "@clack/prompts": "^0.6.3",
     "bip32": "^3.1.0",
