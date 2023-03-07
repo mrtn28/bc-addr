@@ -1,3 +1,4 @@
 # bc-addr
-## Create bitcoin addresses from zpub
-### Also can create a new seed
+
+- [x] Create bitcoin mnemonic
+- [x] Generate addresses from zpub
