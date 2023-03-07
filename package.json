@@ -5,7 +5,7 @@
   "type": "module",
   "main": "src/zpub-to-address.js",
   "bin": {
-    "create-mnemonic": "src/create-mnemonic.js"
+    "create-mnemonic": "bin/create-mnemonic.js"
   },
   "scripts": {
     "zpub-to-address": "node src/zpub-to-address.js",
