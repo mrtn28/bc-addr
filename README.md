@@ -18,7 +18,7 @@
 ## Install
 
 ```sh
-npm install
+npm install bc-addr
 ```
 
 ## Usage
