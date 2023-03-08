@@ -6,7 +6,7 @@ import * as ecc from 'tiny-secp256k1'
 const bip32 = BIP32Factory(ecc)
 const network = bitcoin.networks.bitcoin
 
-const convertZ = z => {
+const zpub2xpub = z => {
   const data = b58.decode(z).subarray(4)
   const a = `0${network.bip32.public.toString(16)}`
   const t = Buffer.from(a, 'hex')
@@ -14,8 +14,8 @@ const convertZ = z => {
   return b58.encode(b)
 }
 
-const zpubToAddress = (zpub, limit = 1) => {
-  const xpub = convertZ(zpub)
+const zpub2address = (zpub, limit = 1) => {
+  const xpub = zpub2xpub(zpub)
   const node = bip32.fromBase58(xpub, network)
   const addresses = []
   for (let addressIndex = 0; addressIndex < limit; addressIndex++) {
@@ -27,4 +27,7 @@ const zpubToAddress = (zpub, limit = 1) => {
   return r
 }
 
-export { zpubToAddress }
+export {
+  zpub2xpub,
+  zpub2address
+}
