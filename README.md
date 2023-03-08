@@ -29,8 +29,8 @@ npx bc-addr # Create bitcoin mnemonic
 
 ```js
 import {
-    zpub2address, // Generate addresses from zpub
-    zpub2xpub     // zpub to xpub
+  zpub2address, // Generate addresses from zpub
+  zpub2xpub     // zpub to xpub
 } from 'bc-addr'
 ```
 
