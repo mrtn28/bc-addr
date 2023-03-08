@@ -23,22 +23,21 @@ npm install bc-addr
 
 ## Usage
 
-Create bitcoin mnemonic:
-
 ```sh
-npx bc-addr
+npx bc-addr # Create bitcoin mnemonic
 ```
 
-Generate addresses from zpub:
-
-```sh
-import { zpubToAddress } from 'bc-addr'
+```js
+import {
+    zpub2address, // Generate addresses from zpub
+    zpub2xpub     // zpub to xpub
+} from 'bc-addr'
 ```
 
 ## Run tests
 
 ```sh
-npm run test-zpub-to-address
+npm run test
 ```
 
 ## Author
