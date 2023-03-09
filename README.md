@@ -3,11 +3,11 @@
   <a href="https://www.npmjs.com/package/bc-addr" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/bc-addr.svg">
   </a>
-  <a href="https://github.com/mrtn28/bc-addr#readme" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  <a href="https://www.npmjs.com/package/bc-addr">
+    <img alt="downloads" src="https://img.shields.io/npm/dm/bc-addr.svg" target="_blank" />
   </a>
-  <a href="https://github.com/mrtn28/bc-addr/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  <a href="https://github.com/mrtn28/bc-addr/blob/main/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/mrtn28/bc-addr" />
   </a>
 </p>
 
@@ -57,7 +57,7 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2023 [mrtn28](https://github.com/mrtn28).<br />
-This project is [MIT](https://github.com/mrtn28/bc-addr/blob/master/LICENSE) licensed.
+This project is [MIT](https://github.com/mrtn28/bc-addr/blob/main/LICENSE) licensed.
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
