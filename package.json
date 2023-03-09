@@ -18,7 +18,7 @@
     "name" : "mrtn28",
     "url" : "https://github.com/mrtn28"
   },
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/mrtn28/bc-addr#readme",
   "bugs": "https://github.com/mrtn28/bc-addr/issues",
   "repository": {
