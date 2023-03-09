@@ -8,10 +8,10 @@
     "create-mnemonic": "bin/create-mnemonic.js"
   },
   "scripts": {
-    "zpub-to-address": "node src/zpub-to-address.js",
+    "create-mnemonic": "node src/create-mnemonic.js",
     "test": "npm run test-zpub-to-address",
     "test-zpub-to-address": "node test/zpub-to-address.js",
-    "create-mnemonic": "node src/create-mnemonic.js"
+    "zpub-to-address": "node src/zpub-to-address.js"
   },
   "keywords": ["address", "bip39", "bitcoin", "mnemonic", "zpub"],
   "author": {
