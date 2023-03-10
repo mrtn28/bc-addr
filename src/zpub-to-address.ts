@@ -8,9 +8,10 @@ const network = bitcoin.networks.bitcoin
 
 const zpub2xpub = (z: string): string => {
   const data = b58.decode(z).subarray(4)
-  const a = `0${network.bip32.public.toString(16)}`
-  const t = Buffer.from(a, 'hex')
-  const b = Buffer.concat([t, data])
+  const n: string = network.bip32.public.toString(16)
+  const e = `0${n}`
+  const h = Buffer.from(e, 'hex')
+  const b = Buffer.concat([h, data])
   return b58.encode(b)
 }
 
