@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-import '../src/create-mnemonic.ts'
+import '../src/create-mnemonic'
