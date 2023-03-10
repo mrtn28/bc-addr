@@ -1,21 +1,23 @@
 import { cancel, intro, isCancel, outro, select } from '@clack/prompts'
-import bip39 from 'bip39'
+import { generateMnemonic } from 'bip39'
 
-intro('Generate mnemonic')
+void (async () => {
+  intro('Generate mnemonic')
 
-const strength = await select({
-  message: 'Pick a number of words',
-  options: [
-    { value: '128', label: '12' },
-    { value: '256', label: '24' }
-  ]
-})
+  const strength = await select({
+    message: 'Pick a number of words',
+    options: [
+      { value: '128', label: '12' },
+      { value: '256', label: '24' }
+    ]
+  })
 
-if (isCancel(strength)) {
-  cancel('Operation cancelled')
-  process.exit(0)
-}
+  if (isCancel(strength)) {
+    cancel('Operation cancelled')
+    process.exit(0)
+  }
 
-const mnemonic = bip39.generateMnemonic(strength)
+  const mnemonic = generateMnemonic(strength as number)
 
-outro(mnemonic)
+  outro(mnemonic)
+})()
