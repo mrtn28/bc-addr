@@ -6,7 +6,8 @@ const nextConfig = {
       syncWebAssembly: true
     }
     return config
-  }
+  },
+  basePath: '/docs'
 }
 
 module.exports = nextConfig
