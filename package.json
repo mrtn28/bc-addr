@@ -4,7 +4,7 @@
   "description": "Create bitcoin mnemonic and generate addresses from zpub",
   "main": "src/zpub2address",
   "bin": {
-    "create-mnemonic": "bin/create-mnemonic"
+    "create-mnemonic": "bin/create-mnemonic.js"
   },
   "scripts": {
     "compile": "tsc",
