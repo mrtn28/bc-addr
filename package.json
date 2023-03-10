@@ -26,7 +26,7 @@
     "url": "https://github.com/mrtn28/bc-addr.git"
   },
   "dependencies": {
-    "bc-addr": "^1.1.0-ts"
+    "bc-addr": "latest"
   },
   "devDependencies": {
     "standard": "^17.0.0"
