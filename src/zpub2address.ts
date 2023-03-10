@@ -2,6 +2,7 @@ import { BIP32Factory } from 'bip32'
 import * as bitcoin from 'bitcoinjs-lib'
 import b58 from 'bs58check'
 import * as ecc from 'tiny-secp256k1'
+import { zpub2addressOptions } from '../defaults'
 
 const bip32 = BIP32Factory(ecc)
 const network = bitcoin.networks.bitcoin
@@ -15,11 +16,11 @@ const zpub2xpub = (z: string): string => {
   return b58.encode(b)
 }
 
-const zpub2address = (zpub: string, limit = 1): string | string[] => {
+const zpub2address = (zpub: string, options = zpub2addressOptions): string | string[] => {
   const xpub = zpub2xpub(zpub)
   const node = bip32.fromBase58(xpub, network)
   const addresses = []
-  for (let addressIndex = 0; addressIndex < limit; addressIndex++) {
+  for (let addressIndex = 0; addressIndex < options.limit; addressIndex++) {
     const pubkey = node.derive(addressIndex).publicKey
     const address = bitcoin.payments.p2wpkh({ pubkey, network }).address
     if (address !== undefined) addresses.push(address)
