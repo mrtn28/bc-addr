@@ -3,15 +3,15 @@
   "version": "1.0.8",
   "description": "Create bitcoin mnemonic and generate addresses from zpub",
   "type": "module",
-  "main": "src/zpub-to-address.js",
+  "main": "src/zpub-to-address.ts",
   "bin": {
-    "create-mnemonic": "bin/create-mnemonic.js"
+    "create-mnemonic": "bin/create-mnemonic.ts"
   },
   "scripts": {
-    "create-mnemonic": "ts-node src/create-mnemonic.js",
+    "create-mnemonic": "ts-node src/create-mnemonic.ts",
     "test": "npm run test-zpub-to-address",
-    "test-zpub-to-address": "ts-node test/zpub-to-address.js",
-    "zpub-to-address": "ts-node src/zpub-to-address.js"
+    "test-zpub-to-address": "ts-node test/zpub-to-address.ts",
+    "zpub-to-address": "ts-node src/zpub-to-address.ts"
   },
   "keywords": [
     "address",
