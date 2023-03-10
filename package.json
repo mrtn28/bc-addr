@@ -7,6 +7,7 @@
     "create-mnemonic": "bin/create-mnemonic"
   },
   "scripts": {
+    "compile": "tsc",
     "create-mnemonic": "ts-node src/create-mnemonic",
     "test": "npm run test-zpub-to-address",
     "test-zpub-to-address": "ts-node test/zpub-to-address",
