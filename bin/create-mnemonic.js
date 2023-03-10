@@ -1,3 +1,4 @@
 #!/usr/bin/env node
-
-import '../src/create-mnemonic.js'
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("../src/create-mnemonic");

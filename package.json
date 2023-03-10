@@ -1,22 +1,28 @@
 {
   "name": "bc-addr",
-  "version": "1.0.8",
+  "version": "1.1.0-ts.1",
   "description": "Create bitcoin mnemonic and generate addresses from zpub",
-  "type": "module",
-  "main": "src/zpub-to-address.js",
+  "main": "src/zpub2address",
   "bin": {
     "create-mnemonic": "bin/create-mnemonic.js"
   },
   "scripts": {
-    "create-mnemonic": "node src/create-mnemonic.js",
-    "test": "npm run test-zpub-to-address",
-    "test-zpub-to-address": "node test/zpub-to-address.js",
-    "zpub-to-address": "node src/zpub-to-address.js"
+    "compile": "tsc",
+    "create-mnemonic": "ts-node src/create-mnemonic",
+    "test": "npm run test-zpub2address",
+    "test-zpub2address": "ts-node test/zpub2address",
+    "zpub2address": "ts-node src/zpub2address"
   },
-  "keywords": ["address", "bip39", "bitcoin", "mnemonic", "zpub"],
+  "keywords": [
+    "address",
+    "bip39",
+    "bitcoin",
+    "mnemonic",
+    "zpub"
+  ],
   "author": {
-    "name" : "mrtn28",
-    "url" : "https://github.com/mrtn28"
+    "name": "mrtn28",
+    "url": "https://github.com/mrtn28"
   },
   "license": "MIT",
   "homepage": "https://github.com/mrtn28/bc-addr#readme",
@@ -27,17 +33,19 @@
   },
   "dependencies": {
     "@clack/prompts": "^0.6.3",
-    "bip32": "^3.1.0",
+    "bip32": "^4.0.0",
     "bip39": "^3.1.0",
     "bitcoinjs-lib": "^6.1.0",
-    "bs58check": "^2.1.2",
+    "bs58check": "^3.0.1",
     "tiny-secp256k1": "^2.2.1"
   },
   "devDependencies": {
-    "@types/bip32": "^2.0.0",
-    "@types/bitcoinjs-lib": "^5.0.0",
     "@types/bs58check": "^2.1.0",
-    "@types/tiny-secp256k1": "^2.0.1",
-    "standard": "^17.0.0"
+    "ts-node": "^10.9.1",
+    "ts-standard": "^12.0.2",
+    "typescript": "^4.9.5"
+  },
+  "ts-standard": {
+    "ignore": ["*.js"]
   }
 }
