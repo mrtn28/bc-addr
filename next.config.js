@@ -7,8 +7,8 @@ const nextConfig = {
     }
     return config
   },
-  basePath: '/bc-addr',
-  assetPrefix: '/bc-addr/' // assetPrefix requires the trailing slash
+  // basePath: '/bc-addr',
+  // assetPrefix: '/bc-addr/' // assetPrefix requires the trailing slash
 }
 
 module.exports = nextConfig
